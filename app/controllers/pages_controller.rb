@@ -12,9 +12,6 @@ class PagesController < ApplicationController
 
   def tech_news
     @tweets = SocialTool.twitter_search
-  end
-
-  def instagram
-
+    @pics = SocialTool.instagram_search
   end
 end

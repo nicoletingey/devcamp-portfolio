@@ -1,14 +1,23 @@
-<div class="inner cover">
-  <h1 class="cover-heading">Developer News</h1>
-  <div class="row">
-    <% @tweets.each do |tweet| %>
-      <div class="col-md-6">
-        <div class="tech-news">
-          <div class="card">
-            <%= twitter_parser tweet %>
+<div class="covhead">
+  <div class="inner cover">
+    <h1 class="cover-heading">Recent Developer Tweets</h1>
+    <div class="row">
+      <% @tweets.each do |tweet| %>
+        <div class="col-md-6">
+          <div class="tech-news">
+            <div class="card">
+              <%= twitter_parser tweet %>
+            </div>
           </div>
         </div>
-      </div>
-    <% end %>
+      <% end %>
+    </div>
   </div>
+
+  <a href ="https://www.instagram.com/cocotingsterr/" target="_blank"> Visit My Instagram </a>
+  
+  <h1 class="cover-heading">My Recent Instagrams</h1>
+    <% @pics.each do |pictures| %>
+        <img src="<%=pictures[0]%>" width="<%= pictures[1]%>">
+    <% end %>
 </div>
