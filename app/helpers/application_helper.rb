@@ -75,4 +75,13 @@ module ApplicationHelper
     js add_gritter(msg, title: "Nicole Tingey Portfolio", sticky: false)
   end
 
+  def markdown_parser content
+    markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML,
+        no_intra_emphasis: true, 
+        fenced_code_blocks: true,   
+        disable_indented_code_blocks: true)
+      return markdown.render(content).html_safe
+  end
+
+
 end
