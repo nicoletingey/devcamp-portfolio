@@ -3,6 +3,15 @@
     <h4>About</h4>
     <p>Hi! My name is Nicole Tingey, but my friends and family call me Coco. I graduated high school in May of 2016, and then graduated from a coding bootcamp in December of 2016. I love coding, fashion, cooking, photography, and family.</p>
   </div>
+
+
+  <div class="sidebar-module">
+    <h4>Topics</h4>
+    <% @side_bar_topics.each do |topic| %>
+      <p><%= link_to topic.title, topic_path(topic) %></p>
+    <% end %>
+  </div>
+
   <div class="sidebar-module">
     <h4>Elsewhere</h4>
     <ol class="list-unstyled social-links">

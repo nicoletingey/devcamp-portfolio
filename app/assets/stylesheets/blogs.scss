@@ -6,6 +6,14 @@
  * Globals
  */
 
+.form-check {
+  display: inline-block;
+}
+
+.blog-radio {
+  margin: 30px;
+}
+
 @media (min-width: 48em) {
   html {
     font-size: 18px;
