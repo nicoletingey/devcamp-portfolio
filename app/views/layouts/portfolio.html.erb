@@ -15,7 +15,6 @@
   <body>
       
     <%= render 'shared/portfolio_nav' %>
-
     <%= render 'shared/portfolio_masthead' unless logged_in?(:site_admin) %>
   
     <%= yield %>
@@ -23,8 +22,6 @@
     <%= render 'shared/portfolio_footer' %>
 
     <%= alerts %>
-
-    <%= source_helper("portfolio") %>
 
   </body>
 </html>
