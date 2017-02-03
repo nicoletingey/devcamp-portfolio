@@ -1,15 +1,60 @@
-<h1 class="titleabout">About Me</h1>
+<div class="app-card-container">
+  <div class="card">
+    <h1>About Me</h1>
 
-<hr>
+    <hr>
 
-<div class="row">
-  <div class="col-md-4">
-   <%= image_tag "IMG_0732.jpg", width: 300, alt: "profile image" %>
-  </div>
+    <div class="row">
+      <div class="col-md-4">
+        <%= image_tag "IMG_0732.jpg", width: 300, alt: "profile image", class: 'profile-img' %>
+      </div>
 
-  <div class="col-md-8 aboutme">
-    <p> I am a 19 year old computer programmer. In the fall of 2016, I signed up for a coding bootcamp called <strong><a href="http://www.bottega.tech/" target='_blank'> Bottega Tech. </a></strong>   At this bootcamp, I studied Ruby on Rails, HTML and CSS, and Angular. I then moved to Scottsdale, AZ and taught the first cohort of Bottega in Arizona. This journey has been frustrating, and challenging, but my life has been flooded with opportunities. 
-    </p>
-    <p>I have been inspired by many women in the past and the present, but one quote from Karlie Kloss has influenced me since the moment I began my career as a programmer. "I want to encourage more young women to get involved in coding, because it's important for them to be able to help shape the future, and coding is the future." </p>
+      <div class="col-md-8 bio">
+        <p>I am a 19 year old computer programmer. In the fall of 2016, I signed up for a coding bootcamp called <strong><a href="http://www.bottega.tech/" target='_blank'> Bottega Tech. </a></strong>   At this bootcamp, I studied Ruby on Rails, HTML and CSS, and Angular. I then moved to Scottsdale, AZ and taught the first cohort of Bottega in Arizona. This journey has been very challenging, but my hard work is paying off.</p>
+
+        <p>I have been inspired by many women in the past and the present, but one quote from Karlie Kloss has influenced me since the moment I began my career as a programmer. "I want to encourage more young women to get involved in coding, because it's important for them to be able to help shape the future, and coding is the future."</p>
+
+        <p>
+          <button
+            class="btn btn-primary"
+            type="button"
+            data-toggle="collapse"
+            data-target="#jobHistory"
+            aria-expanded="false"
+            aria-controler="jobHistory"
+          >
+            Job History
+          </button>
+
+          <button
+            class="btn btn-primary"
+            type="button"
+            data-toggle="collapse"
+            data-target="#education"
+            aria-expanded="false"
+            aria-controler="education"
+          >
+            Education
+          </button>
+        </p>
+
+        <p>
+          <div class="collapse" id="jobHistory">
+            <div class="card card-block">
+              Bottega Tech Teacher's Assistant
+            </div>
+            <div class="card card-block">
+              Fight The New Drug Sound Editor
+            </div>
+          </div>
+
+          <div class="collapse" id="education">
+            <div class="card card-block">
+              Bottega Tech
+            </div>
+          </div>
+        </p>
+      </div>
+    </div>
   </div>
 </div>

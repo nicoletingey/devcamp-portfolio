@@ -226,14 +226,34 @@ body {
   margin-top: 100px;
 }
 
-.aboutme {
-  background-color: black;
-}
-.aboutme p {
-  margin: 30px;
-  font-size: 1.2em;
+.app-card-container {
+  color: black;
   text-align: left;
+  padding: 20px;
 }
-.titleabout {
-  margin-top: 15px;
+
+.app-card-container > .card {
+  padding: 40px;
+}
+
+.profile-img {
+  border: 1px solid grey;
+}
+
+.app-card-container a {
+  color: purple;
+}
+
+.card-block {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.skill {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.bio {
+  font-size: 1.3em;
 }
