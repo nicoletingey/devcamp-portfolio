@@ -102,10 +102,12 @@ h6, .h6 {
   margin-bottom: 0;
   font-size: 2rem;
   font-weight: normal;
+  text-align: center;
 }
 .blog-description {
   font-size: 1.1rem;
   color: #999;
+  text-align: center;
 }
 
 @media (min-width: 40em) {
@@ -166,6 +168,11 @@ h6, .h6 {
 /*
  * Footer
  */
+
+.carouselimg {
+  height: 10%;
+  width: 100%;
+}
 
 .blog-footer {
   margin-top: 20px;

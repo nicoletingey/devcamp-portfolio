@@ -1,7 +1,39 @@
 <div class="blog-header">
   <div class="container">
+
     <h3 class="blog-title">A female workhorse</h3>
     <p class="lead blog-description">I have chosen to be industrious. I take advantage of the opportunities that are presented to me, and then work to be my best. I believe that being born in America has enabled me to become whatever I choose, and I am grateful for this. I DO NOT put up with laziness. </p>
+
+    <div id="carouselExampleIndicators" class=" carouselone carousel slide " data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active">
+          <%= image_tag "IMG_0898.jpg", class: "carouselimg" %>
+        </div>
+        <div class="carousel-item">
+          <%= image_tag "IMG_1094.jpg", class: "carouselimg" %>
+        </div>
+        <div class="carousel-item">
+          <%= image_tag "IMG_1427.jpg", class: "carouselimg" %>
+        </div>
+        <div class="carousel-item">
+          <%= image_tag "IMG_1626.jpg", class: "carouselimg" %>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
     <span>
       <%= link_to 'Write a New Blog', new_blog_path if logged_in?(:site_admin) %>
     </span>
@@ -11,3 +43,8 @@
     </span>
   </div>
 </div>
+
+
+    
+    
+    
